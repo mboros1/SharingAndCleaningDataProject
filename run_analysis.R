@@ -44,11 +44,6 @@ activities <- yCombined[[1]]
 CombinedData <- cbind(activitylabels[,2][activities], subjectcombined, TrainTestCombined)
 names(CombinedData) <- c("ActivityLabels", names(CombinedData[,2:81]))  ## Change the name of the newest column
 
-# Turn activity labels and subject ID's into factors
-
-CombinedData$ActivityLabels <- factor(CombinedData$ActivityLabels, levels = activitylabels[,1], labels = activitylabels[,2])
-CombinedData$SubjectID <- as.factor(CombinedData$SubjectID)
-
 # Melt and cast the data in a form suitable for the final "tidy data" table.
 
 CombinedDataMelted <- melt(CombinedData, id = c("SubjectID", "ActivityLabels"))
