@@ -8,4 +8,4 @@ will:
 * Merges the two datasets
 * Converts the activity and subject columns into factors
 * Creates a tidy dataset that consists of the mean value of each variable for each subject and activity pair.
-* The end result is shown in the file tidy.txt.
+* The final product is the tidy.txt file which is the requirement for the project.
